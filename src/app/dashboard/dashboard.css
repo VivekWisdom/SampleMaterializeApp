@@ -1,0 +1,8 @@
+
+nav.nav-wrapper a.page-title{
+  font-size: 2em;
+  line-height: 2em;
+}
+footer.page-footer{
+  padding-top: 0 !important;
+}
