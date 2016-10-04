@@ -1,8 +1,85 @@
+/* Navigation */
 
-nav.nav-wrapper a.page-title{
+nav.nav-wrapper a.page-title {
   font-size: 2em;
   line-height: 2em;
+  max-width: 30vw !important;
+  margin: 0 35vw;
 }
-footer.page-footer{
+
+
+/* Content */
+
+
+/*===== Supervisor Review =====*/
+
+.supervisor-review {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.supervisor-review .top-header {
+  height: 50px;
+  width: 100%;
+}
+
+.supervisor-review .top-header .view-form {
+  width: 64%;
+  height: 100% !important;
+  float: left;
+}
+
+.supervisor-review .top-header .view-form .input-field {
+  width: 15%;
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.supervisor-review .top-header .request-popup {
+  float: right;
+  margin: 0.5em 0;
+}
+
+.top-header .btn {
+  letter-spacing: normal !important;
+  padding: 0 1rem;
+}
+
+.supervisor-review .view-button {
+  margin-top: 4px;
+}
+
+.supervisor-review .review-table{
+  border: 1px solid;
+  min-height: 350px;
+  margin: 0.5em 0 0 0;
+}
+
+
+/*===== Weekly Details =====*/
+
+.weekly-details {
+  width: 45%;
+  min-height: 350px;
+  display: inline-block;
+  border: 1px solid;
+}
+
+
+/*===== Daily Details =====*/
+
+.daily-details {
+  width: 54%;
+  min-height: 350px;
+  float: right;
+  display: inline-block;
+  border: 1px solid;
+}
+
+
+/* Footer */
+
+footer.page-footer {
   padding-top: 0 !important;
+  margin-top: 1em;
 }

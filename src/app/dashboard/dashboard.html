@@ -1,36 +1,220 @@
 <header>
   <nav class="nav-wrapper">
-    <a class="page-title center">Capacity Management</a>
+    <a class="page-title">Capacity Management</a>
     <ul id="slide-out" class="side-nav">
       <li>
-        <a href="#!">
-          <i class="material-icons">cloud</i>First Link With Icon</a>
+        <a class="waves-effect" href="#!">
+          <i class="material-icons">web</i>Capacity Management</a>
       </li>
       <li>
-        <a href="#!">Second Link</a>
+        <a class="waves-effect" href="#!">
+          <i class="material-icons">view_list</i>Exception Report</a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#!">
+          <i class="material-icons">settings</i>Settings</a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#!">
+          <i class="material-icons">receipt</i>Vendor Submissions</a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#!">
+          <i class="material-icons">visibility</i>Administration</a>
       </li>
       <li>
         <div class="divider"></div>
       </li>
       <li>
-        <a class="subheader">Subheader</a>
-      </li>
-      <li>
-        <a class="waves-effect" href="#!">Third Link With Waves</a>
+        <a class="waves-effect" href="#!">
+          <i class="material-icons">power_settings_new</i>Log Out</a>
       </li>
     </ul>
-    <a href="#" data-activates="slide-out" class="button-collapse show-on-large">
+    <a materialize="sideNav" href="#" data-activates="slide-out" class="button-collapse show-on-large">
       <i class="material-icons">menu</i>
     </a>
   </nav>
 </header>
 <section class="dashboard">
-  <div class="container">
-    <div class="row">
-      <div class="col s12 m12 l12">
-        <h1>Dashboard Page</h1>
+  <div class="row">
+    <div class="col s12 m12 l12">
+      <div class="supervisor-review">
+        <div class="top-header">
+          <div class="view-form">
+            <form materialize>
+              <div class="input-field">
+                <select materialize="material_select">
+                  <option value="" disabled selected>Choose option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <select materialize="material_select">
+                  <option value="" disabled selected>Choose option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <select materialize="material_select">
+                  <option value="" disabled selected>Choose option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <input materialize="pickadate" placeholder="From Date" type="date" class="datepicker">
+              </div>
+              <div class="input-field">
+                <input materialize="pickadate" placeholder="To Date" type="date" class="datepicker">
+              </div>
+              <button class="btn waves-effect waves-light view-button" type="submit" name="action">View</button>
+            </form>
+          </div>
+          <div class="request-popup">
+            <a class="waves-effect waves-light btn">New Tech Request</a>
+            <a class="waves-effect waves-light btn">New Supervisor Request</a>
+          </div>
+        </div>
+        <div class="review-table">
+          <table class="responsive-table striped centered">
+            <thead>
+              <tr>
+                <th>Details</th>
+                <th>Date/Time Submitted</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Exception Type</th>
+                <th>Number of Techs</th>
+                <th>Workzone</th>
+                <th>Tech ID</th>
+                <th>Supervisor</th>
+                <th>Decision</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Details</td>
+                <td>Date/Time Submitted</td>
+                <td>Start Date</td>
+                <td>End Date</td>
+                <td>Start Time</td>
+                <td>End Time</td>
+                <td>Exception Type</td>
+                <td>Number of Techs</td>
+                <td>Workzone</td>
+                <td>Tech ID</td>
+                <td>Supervisor</td>
+                <td>Decision</td>
+              </tr>
+              <tr>
+                <td>Details</td>
+                <td>Date/Time Submitted</td>
+                <td>Start Date</td>
+                <td>End Date</td>
+                <td>Start Time</td>
+                <td>End Time</td>
+                <td>Exception Type</td>
+                <td>Number of Techs</td>
+                <td>Workzone</td>
+                <td>Tech ID</td>
+                <td>Supervisor</td>
+                <td>Decision</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
+        <div class="weekly-details">
+          <div class="">
+
+          </div>
+          <div class="mw-table">
+            <table class="responsive-table striped centered">
+              <thead>
+                <tr>
+                  <th>Details</th>
+                  <th>Date/Time Submitted</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                  <th>Start Time</th>
+                  <th>End Time</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Details</td>
+                  <td>Date/Time Submitted</td>
+                  <td>Start Date</td>
+                  <td>End Date</td>
+                  <td>Start Time</td>
+                  <td>End Time</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="daily-details">
+          <div class="title">
+
+          </div>
+          <div class="mw-table">
+            <table class="responsive-table striped centered">
+              <thead>
+                <tr>
+                  <th>Details</th>
+                  <th>Date/Time Submitted</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                  <th>Start Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Details</td>
+                  <td>Date/Time Submitted</td>
+                  <td>Start Date</td>
+                  <td>End Date</td>
+                  <td>Start Time</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mw-table">
+            <table class="responsive-table striped centered">
+              <thead>
+                <tr>
+                  <th>Details</th>
+                  <th>Date/Time Submitted</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                  <th>Start Time</th>
+                  <th>End Time</th>
+                  <th>End Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Details</td>
+                  <td>Date/Time Submitted</td>
+                  <td>Start Date</td>
+                  <td>End Date</td>
+                  <td>Start Time</td>
+                  <td>End Time</td>
+                  <th>End Time</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
   </div>
 </section>
 <footer class="page-footer">
