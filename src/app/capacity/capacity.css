@@ -1,0 +1,74 @@
+/* Content */
+
+
+/*===== Supervisor Review =====*/
+
+.supervisor-review {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.supervisor-review .top-header {
+  height: 50px;
+  width: 100%;
+}
+
+.supervisor-review .top-header .view-form {
+  width: 64%;
+  height: 100% !important;
+  float: left;
+}
+
+.supervisor-review .top-header .view-form .input-field {
+  width: 15%;
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.supervisor-review .top-header .request-popup {
+  max-width: 35%;
+  float: right;
+  margin: 0.5em 0;
+}
+.supervisor-review .top-header .request-popup:nth-child(1){
+  max-width: 44%;
+}
+.supervisor-review .top-header .request-popup:nth-child(2){
+  max-width: 56%;
+}
+.top-header .btn {
+  text-transform: capitalize;
+  letter-spacing: normal !important;
+  padding: 0 1rem;
+}
+
+.supervisor-review .view-button {
+  margin-top: 4px;
+}
+
+.supervisor-review .review-table {
+  border: 1px solid;
+  min-height: 350px;
+  margin: 0.5em 0 0 0;
+}
+
+
+/*===== Weekly Details =====*/
+
+.weekly-details {
+  width: 45%;
+  min-height: 350px;
+  display: inline-block;
+  border: 1px solid;
+}
+
+
+/*===== Daily Details =====*/
+
+.daily-details {
+  width: 54%;
+  min-height: 350px;
+  float: right;
+  display: inline-block;
+  border: 1px solid;
+}

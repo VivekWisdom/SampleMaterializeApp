@@ -15,7 +15,7 @@ import { ROUTES } from './app.routes';
 import { App } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { Login } from './login';
-import { Dashboard } from './dashboard';
+import { DashboardModule } from './dashboard';
 import { NoContent } from './no-content';
 
 // Application wide providers
@@ -35,7 +35,6 @@ type StoreType = {
   bootstrap: [ App ],
   declarations: [
     App,
-    Dashboard,
     Login,
     NoContent,
     MaterializeDirective
@@ -44,6 +43,7 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
+    DashboardModule,
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection

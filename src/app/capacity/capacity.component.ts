@@ -1,16 +1,15 @@
-
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {MaterializeDirective} from 'angular2-materialize'
 
 
 @Component({
-  selector: 'dashboard',
-  styleUrls: ['./dashboard.css'],
-  templateUrl:'./dashboard.html',
+  selector: 'capacity',
+  styleUrls: ['./capacity.css'],
+  templateUrl:'./capacity.html',
   providers:[MaterializeDirective]
 })
-export class Dashboard {
+export class Capacity {
   constructor() {
 
   }
