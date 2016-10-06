@@ -2,6 +2,7 @@ import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { CommonModule }   from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
 /*
@@ -13,8 +14,14 @@ import { ROUTES } from './app.routes';
 // App is our top level component
 import { App } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
-import { Login } from './login';
+
+import { LoginModule } from './login';
 import { DashboardModule } from './dashboard';
+import { AdminModule } from './admin';
+import { CapacityModule } from './capacity';
+import { ExceptionModule } from './exception';
+import { VendorModule } from './vendor';
+
 import { NoContent } from './no-content';
 
 // Application wide providers
@@ -31,10 +38,9 @@ type StoreType = {
  * `AppModule` is the main entry point into Angular2's bootstraping process
  */
 @NgModule({
-  bootstrap: [ App ],
+  bootstrap: [App],
   declarations: [
     App,
-    Login,
     NoContent,
     MaterializeDirective
   ],
@@ -42,7 +48,13 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
+    CommonModule,
+    LoginModule,
     DashboardModule,
+    AdminModule,
+    CapacityModule,
+    ExceptionModule, 
+    VendorModule,
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
@@ -51,6 +63,6 @@ type StoreType = {
   ]
 })
 export class AppModule {
-  constructor(public appRef: ApplicationRef) {}
+  constructor(public appRef: ApplicationRef) { }
 
 }
