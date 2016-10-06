@@ -8,12 +8,17 @@ import { Settings } from '../settings';
 import { Vendor } from '../vendor';
 
 const dashboardRoutes: Routes = [
-  { path: 'dashboard', component: Dashboard },
-  { path: 'capacity', component: Capacity },
-  { path: 'exception', component: Exception },
-  { path: 'settings', component: Settings },
-  { path: 'vendor', component: Vendor },
-  { path: 'admin', component: Admin },
+  {
+    path: '',
+    component:Dashboard,
+    children: [
+      { path: '', component: Capacity },
+      { path: 'exception', component: Exception },
+      { path: 'settings', component: Settings },
+      { path: 'vendor', component: Vendor },
+      { path: 'admin', component: Admin },
+    ]
+  }
 ];
 
 export const dashboardRouting: ModuleWithProviders = RouterModule.forChild(dashboardRoutes);

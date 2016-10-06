@@ -8,6 +8,7 @@ import { Exception }  from '../exception';
 import { Settings } from '../settings';
 import { Vendor } from '../vendor';
 import { dashboardRouting } from './dashboard.routing';
+
 @NgModule({
   imports: [
     CommonModule,
