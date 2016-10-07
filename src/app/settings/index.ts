@@ -1,3 +1,3 @@
-export * from './settings.component';
-export * from './settings.module';
-export * from './settings.routes';
+export {Settings} from './settings.component';
+export {SettingsModule} from './settings.module';
+export {settingsRoutes} from './settings.routes';

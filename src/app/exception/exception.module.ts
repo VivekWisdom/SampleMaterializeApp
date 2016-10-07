@@ -1,11 +1,8 @@
 import { NgModule }       from '@angular/core';
-import { Exception }    from '../exception';
-import { exceptionRouting } from '../exception';
+import { Exception }    from './exception.component';
 
 @NgModule({
-  imports: [
-    exceptionRouting
-  ],
+  imports: [],
   declarations: [
     Exception
   ],

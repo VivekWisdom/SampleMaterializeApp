@@ -1,3 +1,3 @@
-export * from './capacity.component';
-export * from './capacity.module';
-export * from './capacity.routes';
+export {Capacity} from './capacity.component';
+export {CapacityModule} from './capacity.module';
+export {capacityRoutes} from './capacity.routes';

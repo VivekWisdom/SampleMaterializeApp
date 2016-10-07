@@ -1,11 +1,8 @@
 import { NgModule }       from '@angular/core';
-import { Settings }    from '../settings';
-import { settingsRouting } from '../settings';
+import { Settings }    from './settings.component';
 
 @NgModule({
-  imports: [
-    settingsRouting
-  ],
+  imports: [],
   declarations: [
     Settings
   ],

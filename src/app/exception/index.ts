@@ -1,3 +1,3 @@
-export * from './exception.component';
-export * from './exception.module';
-export * from './exception.routes';
+export {Exception} from './exception.component';
+export {ExceptionModule} from './exception.module';
+export {exceptionRoutes} from './exception.routes';

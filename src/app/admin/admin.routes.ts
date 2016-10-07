@@ -3,8 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { Admin }    from '../admin';
 
-const adminRoutes: Routes = [
-  { path: '', component: Admin }
+export const adminRoutes: Routes = [
+  { path: 'admin', component: Admin }
 ];
-
-export const adminRouting: ModuleWithProviders = RouterModule.forChild(adminRoutes);

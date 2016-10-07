@@ -1,17 +1,12 @@
-import { NgModule }       from '@angular/core';
+import { NgModule } from '@angular/core';
 
-import { Login }    from '../login';
-import { loginRouting } from '../login';
+import { Login } from './login.component';
 
 @NgModule({
-  imports: [
-    loginRouting
-  ],
+  imports: [],
   declarations: [
     Login
   ],
-  providers: [
-
-  ]
+  providers: []
 })
-export class LoginModule {}
+export class LoginModule { }

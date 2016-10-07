@@ -1,12 +1,9 @@
 import { NgModule }       from '@angular/core';
 
-import { Capacity }    from '../capacity';
-import { capacityRouting } from '../capacity';
+import { Capacity }    from './capacity.component';
 
 @NgModule({
-  imports: [
-    capacityRouting
-  ],
+  imports: [],
   declarations: [
     Capacity
   ],

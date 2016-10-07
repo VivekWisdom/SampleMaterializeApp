@@ -1,3 +1,3 @@
-export * from './admin.component';
-export * from './admin.module';
-export * from './admin.routes';
+export {Admin} from './admin.component';
+export {AdminModule} from './admin.module';
+export {adminRoutes} from './admin.routes';
