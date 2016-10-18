@@ -5,7 +5,7 @@ import { Footer } from './footer/index';
 @NgModule({
   imports: [],
   declarations: [Header, Footer],
-  providers: []
+  exports:[Header, Footer]
 })
 export class SharedModule {
 
