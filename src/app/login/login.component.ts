@@ -12,6 +12,6 @@ export class Login {
   }
 
   login() {
-    this._router.navigate(['/']);
+    this._router.navigate(['/dashboard']);
   }
 }

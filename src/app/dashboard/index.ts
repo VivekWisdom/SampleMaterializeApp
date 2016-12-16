@@ -1,3 +1,3 @@
-export * from './dashboard.component';
-export * from './dashboard.module';
-export * from './dashboard.routes';
+// export * from './dashboard.component';
+export {DashboardModule} from './dashboard.module';
+// export * from './dashboard.routes';

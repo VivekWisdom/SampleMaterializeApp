@@ -1,7 +1,7 @@
 import { NgModule }       from '@angular/core';
 
-import { Vendor }    from '../vendor';
-import { vendorRouting } from '../vendor';
+import { Vendor }    from './vendor.component';
+import { vendorRouting } from './vendor.routes';
 
 @NgModule({
   imports: [

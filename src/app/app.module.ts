@@ -16,7 +16,7 @@ import { App } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 
 import { LoginModule } from './login';
-import { DashboardModule } from './dashboard';
+import { DashboardModule } from './dashboard/dashboard.module';
 import { AdminModule } from './admin';
 import { CapacityModule } from './capacity';
 import { ExceptionModule } from './exception';
@@ -53,7 +53,7 @@ type StoreType = {
     DashboardModule,
     AdminModule,
     CapacityModule,
-    ExceptionModule, 
+    ExceptionModule,
     VendorModule,
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],

@@ -1,7 +1,9 @@
 import { NgModule }       from '@angular/core';
 
-import { Login }    from '../login';
-import { loginRouting } from '../login';
+// import { Login }    from '../login';
+import { Login } from './login.component';
+// import { loginRouting } from '../login';
+import { loginRouting } from './login.routes';
 
 @NgModule({
   imports: [
@@ -14,4 +16,8 @@ import { loginRouting } from '../login';
 
   ]
 })
-export class LoginModule {}
+export class LoginModule {
+  constructor(){
+    console.log(Login, loginRouting);
+  }
+}
