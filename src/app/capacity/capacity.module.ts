@@ -1,12 +1,10 @@
 import { NgModule }       from '@angular/core';
 
 import { Capacity }    from './capacity.component';
-import { capacityRouting } from './capacity.routes';
+import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
-  imports: [
-    capacityRouting
-  ],
+  imports: [SharedModule],
   declarations: [
     Capacity
   ],

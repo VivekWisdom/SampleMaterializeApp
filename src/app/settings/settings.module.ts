@@ -1,11 +1,9 @@
-import { NgModule }       from '@angular/core';
-import { Settings }    from '../settings';
-import { settingsRouting } from '../settings';
+import { NgModule } from '@angular/core';
+import { Settings } from './settings.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  imports: [
-    settingsRouting
-  ],
+  imports: [ SharedModule],
   declarations: [
     Settings
   ],
@@ -13,4 +11,4 @@ import { settingsRouting } from '../settings';
 
   ]
 })
-export class SettingsModule {}
+export class SettingsModule { }

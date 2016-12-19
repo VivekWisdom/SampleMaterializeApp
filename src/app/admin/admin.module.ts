@@ -1,12 +1,9 @@
 import { NgModule }       from '@angular/core';
 
 import { Admin }    from './admin.component';
-import { adminRouting } from './admin.routes';
 
 @NgModule({
-  imports: [
-    adminRouting
-  ],
+  imports: [],
   declarations: [
     Admin
   ],

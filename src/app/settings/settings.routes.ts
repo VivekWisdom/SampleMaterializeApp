@@ -1,9 +1,7 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { Settings }    from '../settings';
+import { Settings }    from './settings.component';
 
-const settingsRoutes: Routes = [
-  { path: '', component: Settings }
+export const settingsRoutes: Routes = [
+  { path: 'settings', component: Settings }
 ];
-
-export const settingsRouting: ModuleWithProviders = RouterModule.forChild(settingsRoutes);

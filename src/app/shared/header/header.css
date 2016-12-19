@@ -7,11 +7,3 @@ nav.nav-wrapper a.page-title {
   max-width: 30% !important;
   margin: 0 33%;
 }
-
-
-/* Footer */
-
-footer.page-footer {
-  padding-top: 0 !important;
-  margin-top: 1em;
-}

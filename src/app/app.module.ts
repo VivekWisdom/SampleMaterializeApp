@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { CommonModule }   from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -16,12 +15,13 @@ import { App } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 
 import { LoginModule } from './login';
-import { DashboardModule } from './dashboard/dashboard.module';
 import { AdminModule } from './admin';
 import { CapacityModule } from './capacity';
 import { ExceptionModule } from './exception';
 import { VendorModule } from './vendor';
-
+import { SettingsModule } from './settings';
+import {SharedModule} from './shared/shared.module';
+import{ Header, Footer} from './shared';
 import { NoContent } from './no-content';
 
 // Application wide providers
@@ -50,11 +50,12 @@ type StoreType = {
     HttpModule,
     CommonModule,
     LoginModule,
-    DashboardModule,
     AdminModule,
     CapacityModule,
     ExceptionModule,
     VendorModule,
+    SettingsModule,
+    SharedModule,
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
