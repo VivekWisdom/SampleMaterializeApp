@@ -15,14 +15,15 @@ import { ROUTES } from './app.routes';
 import { App } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 
-import { LoginModule } from './login';
+import { LoginModule } from './login/login.module';
 import { DashboardModule } from './dashboard/dashboard.module';
-import { AdminModule } from './admin';
-import { CapacityModule } from './capacity';
-import { ExceptionModule } from './exception';
-import { VendorModule } from './vendor';
+import { AdminModule } from './admin/admin.module';
+import { CapacityModule } from './capacity/capacity.module';
+import { ExceptionModule } from './exception/exception.module';
+import { SettingsModule } from './settings/settings.module';
+import { VendorModule } from './vendor/vendor.module';
 
-import { NoContent } from './no-content';
+import { NoContent } from './no-content/no-content';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -55,6 +56,7 @@ type StoreType = {
     CapacityModule,
     ExceptionModule,
     VendorModule,
+    SettingsModule,
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection

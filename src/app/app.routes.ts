@@ -1,5 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
-import { NoContent } from './no-content';
+import { NoContent } from './no-content/no-content';
 import { DataResolver } from './app.resolver';
 import { Login } from './login/login.component';
 
@@ -12,5 +12,6 @@ export const ROUTES: Routes = [
   { path: 'exception', loadChildren: 'app/exception/exception.module#ExceptionModule' },
   { path: 'vendor', loadChildren: 'app/vendor/vendor.module#VendorModule' },
   { path: 'admin', loadChildren: 'app/admin/admin.module#AdminModule' },
+  { path: 'settings', loadChildren: 'app/settings/settings.module#SettingsModule' },
   { path: '**', component: NoContent },
 ];

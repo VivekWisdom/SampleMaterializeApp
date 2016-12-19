@@ -1,6 +1,6 @@
 import { NgModule }       from '@angular/core';
-import { Settings }    from '../settings';
-import { settingsRouting } from '../settings';
+import { Settings }    from './settings.component';
+import { settingsRouting } from './settings.routes';
 
 @NgModule({
   imports: [
